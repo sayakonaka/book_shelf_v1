@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-  get 'books/index'
-
+  #=> 'books#index'を省略しても勝手にやってくれる!
+  get 'books/index' => 'books#index'
+  
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
